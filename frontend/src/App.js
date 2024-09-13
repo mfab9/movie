@@ -3,7 +3,7 @@ import api from './api/axiosconfig';
 import { useState, useEffect } from 'react';
 import Layout from './components/Layout';
 import {Routes,Route} from  "react-router-dom";
-import Home from './components/home/Home';
+import Home from './components/homme/Home';
 function App() {
   const [movies, setMovies] = useState();
   const getMovies = async () => {
