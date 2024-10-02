@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.Optional;
 
-@CrossOrigin(origins="*")
+//@CrossOrigin(origins="*")
 @RestController
 @RequestMapping("/api/v1/movies")
 public class MovieController  {
@@ -22,6 +22,6 @@ public class MovieController  {
 
     @GetMapping("/{imdbId}")
     public ResponseEntity<Optional<Movie>>  getSingleMovie(@PathVariable String imdbId) {
-        return new ResponseEntity<Optional<Movie>>(movieService.SingleMovie(imdbId), HttpStatus.OK);
+        return new ResponseEntity<Optional<Movie>>(movieService.findMovieByImdbId(imdbId), HttpStatus.OK);
     }
 }
