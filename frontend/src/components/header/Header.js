@@ -11,8 +11,19 @@ const Header = () => {
 return (
     <Navbar bg="dark" variant="dark" expand="lg">
         <Container fluid>
-            <Navbar.Brand href="/" style={{"color":'gold'}}>
-                <FontAwesomeIcon icon ={faVideoSlash}/>Gold
+            <Navbar.Brand href="/" style={{"color":'gold',"fontSize":"28px"}}>
+                {/* <FontAwesomeIcon icon ={faVideoSlash}/> */}
+                <img
+                src={`${process.env.PUBLIC_URL}/Luffy.png`} 
+                alt="MovieVault Logo" 
+                style={{ 
+                    width: '70px',
+                    height: '70px',   
+                    borderRadius: '50%', 
+                    objectFit: 'cover' 
+                }}
+                />
+                MovieVault
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="navbarScroll" />
             <Navbar.Collapse id="navbarScroll">
