@@ -1,5 +1,5 @@
 import React from 'react'
-import Hero from '../herrro/Hero'
+import Hero from '../../Hero'
 
 
 const Home = ({movies}) => {
