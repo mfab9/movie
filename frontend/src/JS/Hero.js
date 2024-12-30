@@ -1,5 +1,5 @@
 import React from 'react'
-import './Hero.css';
+import '../CSS/herrro/Hero.css';
 import Carousel from 'react-material-ui-carousel';
 import { Paper } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';

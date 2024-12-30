@@ -1,4 +1,5 @@
 import './App.css';
+import 'frontend/src/CSS/App.css'
 import api from './api/axiosconfig';
 import { useState, useEffect } from 'react';
 import Layout from './components/Layout';
